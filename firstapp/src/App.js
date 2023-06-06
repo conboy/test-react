@@ -1,12 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 
-function Header() {
-  return <h1>Hello World!</h1>;
-}
+import Heading from './components/Heading';
 
 function App() {
-  return <Header />;
+  return <Heading />;
 }
 
 export default App;
