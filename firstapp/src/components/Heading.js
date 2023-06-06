@@ -1,5 +1,5 @@
-function Heading() {
-    return <h1>Hello World!</h1>;
+function Heading(prop) {
+    return <h1>Hello, {prop.firstName}!</h1>;
 }
 
 export default Heading;

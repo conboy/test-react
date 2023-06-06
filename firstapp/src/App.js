@@ -4,7 +4,13 @@ import './App.css';
 import Heading from './components/Heading';
 
 function App() {
-  return <Heading />;
+  return (
+    <div className="App">
+      <Heading firstName="Conrad"/>
+      <Heading firstName="Vic"/>
+    </div>
+  );
+  
 }
 
 export default App;
