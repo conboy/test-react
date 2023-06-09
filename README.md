@@ -1,2 +1,2 @@
 # test-react
-just a test run for react.js
+My React.js playground

@@ -11,6 +11,8 @@ import TextInputWithFocusButton from './components/TextInputWithFocusButton';
 import PropDrilling from './components/PropDrilling';
 import Fruits from './components/Fruits';
 import FruitsCounter from './components/FruitsCounter';
+import {Routes, Route} from 'react-router-dom';
+
 
 function App() {
   const [fruits] = React.useState([
@@ -33,7 +35,6 @@ function App() {
       <TextInputWithFocusButton />
       <PropDrilling />
 
-      {/* Lifting State up */}
       <div className="Fruits">
         <h1>Where should the state go?</h1>
         <Fruits fruits={fruits} /> 
