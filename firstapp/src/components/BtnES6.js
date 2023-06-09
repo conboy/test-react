@@ -4,7 +4,9 @@ function BtnES6() {
     }
 
     return (
-        <button onClick={exFunction}>ES6 Button</button>
+        <div>
+            <button onClick={exFunction}>ES6 Button</button>
+        </div>
     );
 }
 

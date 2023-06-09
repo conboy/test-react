@@ -1,8 +1,10 @@
 function BtnES5() {
     return (
-        <button onClick={function(){console.log('ES5 button pressed')}}>
-            ES5 Button
-        </button>
+        <div>
+            <button onClick={function(){console.log('ES5 button pressed')}}>
+                ES5 Button
+            </button>
+        </div>        
     )
 }
 

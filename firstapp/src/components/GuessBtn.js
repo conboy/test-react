@@ -6,7 +6,9 @@ function GuessBtn() {
         alert(`Computer number: ${randomNum}, Your guess ${userInput}`);
     }
     return (
-        <button onClick={handleClick}>Guess the number between 1 and 3</button>
+        <div>
+            <button onClick={handleClick}>Guess the number between 1 and 3</button>
+        </div>
     );
 }
 

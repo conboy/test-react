@@ -4,6 +4,10 @@ import Card from './components/Card';
 import BtnES5 from './components/BtnES5';
 import BtnES6 from './components/BtnES6';
 import GuessBtn from './components/GuessBtn';
+import InputComponent from './components/InputComponent';
+import RegisterForm from './components/RegisterForm';
+import TextInputWithFocusButton from './components/TextInputWithFocusButton';
+import PropDrilling from './components/PropDrilling';
 
 function App() {
   return (
@@ -15,6 +19,10 @@ function App() {
       <BtnES5 />
       <BtnES6 />
       <GuessBtn />
+      <InputComponent />
+      <RegisterForm />
+      <TextInputWithFocusButton />
+      <PropDrilling />
     </div>
   );
   
