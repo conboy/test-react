@@ -1,4 +1,5 @@
 import './App.css';
+import React from 'react';
 
 import Card from './components/Card';
 import BtnES5 from './components/BtnES5';
@@ -8,8 +9,16 @@ import InputComponent from './components/InputComponent';
 import RegisterForm from './components/RegisterForm';
 import TextInputWithFocusButton from './components/TextInputWithFocusButton';
 import PropDrilling from './components/PropDrilling';
+import Fruits from './components/Fruits';
+import FruitsCounter from './components/FruitsCounter';
 
 function App() {
+  const [fruits] = React.useState([
+    {fruitName: 'apple', id: 1},
+    {fruitName: 'apple', id: 2},
+    {fruitName: 'plum', id: 3},
+  ]);
+
   return (
     <div className="App">
       <h1>Task: Add three Card elements</h1>
@@ -23,6 +32,15 @@ function App() {
       <RegisterForm />
       <TextInputWithFocusButton />
       <PropDrilling />
+
+      {/* Lifting State up */}
+      <div className="Fruits">
+        <h1>Where should the state go?</h1>
+        <Fruits fruits={fruits} /> 
+        <FruitsCounter fruits={fruits} />
+      </div>
+
+      
     </div>
   );
   
