@@ -1,7 +1,8 @@
 import './App.css';
 import { Routes, Route, Link } from "react-router-dom";
 import About from './components/About';
-import Home from './components/Home';
+import HomePage from './components/HomePage';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -9,11 +10,13 @@ function App() {
       <nav>
         <Link to="/" className='nav-item'>Home</Link>
         <Link to="/about" className='nav-item'>About</Link>
+        <Link to="/contact" className='nav-item'>Contact</Link>
       </nav>
-      
+
       <Routes>
-        <Route path="/" element={<Home />}></Route>
+        <Route path="/" element={<HomePage />}></Route>
         <Route path="/about" element={<About />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
       </Routes>
     </div>
   );
