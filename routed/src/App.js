@@ -3,6 +3,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import About from './components/About';
 import HomePage from './components/HomePage';
 import Contact from './components/Contact';
+import code from './assets/code.jpg';
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
         <Route path="/about" element={<About />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
       </Routes>
+
+      <img src={code} height={200} alt="Code displayed on a monitor"/>
     </div>
   );
 }
