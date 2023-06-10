@@ -1,5 +1,10 @@
+import Video from './Video'
+
 export default function HomePage() {
     return (
-        <h1>Home page</h1>
+        <div>
+            <h1>Home page</h1>
+            <Video url="https://youtu.be/gD24VRCjBKA" />
+        </div>
     )
 }
