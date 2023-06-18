@@ -4,6 +4,30 @@ import About from './components/About';
 import HomePage from './components/HomePage';
 import Contact from './components/Contact';
 import Sound from './components/Sound';
+import MapList from './components/MapList';
+
+const desserts = [
+  {
+    name: "Chocolate Cake",
+    calories: 400,
+    createdAt: "2022-09-01",
+  },
+  {
+    name: "Ice Cream",
+    calories: 200,
+    createdAt: "2022-01-02",
+  },
+  {
+    name: "Tiramisu",
+    calories: 300,
+    createdAt: "2021-10-03",
+  },
+  {
+    name: "Cheesecake",
+    calories: 600,
+    createdAt: "2022-01-04",
+  },
+];
 
 function App() {
   return (
@@ -13,6 +37,7 @@ function App() {
         <Link to="/about" className='nav-item'>About</Link>
         <Link to="/contact" className='nav-item'>Contact</Link>
         <Link to="/sound" className='nav-item'>Sound</Link>
+        <Link to="/list" className='nav-item'>List</Link>
       </nav>
 
       <Routes>
@@ -20,6 +45,7 @@ function App() {
         <Route path="/about" element={<About />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/sound" element={<Sound />}></Route>
+        <Route path="/list" element={<MapList data={desserts}/>}></Route>
       </Routes>
 
       
