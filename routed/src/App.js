@@ -5,6 +5,7 @@ import HomePage from './components/HomePage';
 import Contact from './components/Contact';
 import Sound from './components/Sound';
 import MapList from './components/MapList';
+import Register from './components/Register';
 
 const desserts = [
   {
@@ -38,6 +39,7 @@ function App() {
         <Link to="/contact" className='nav-item'>Contact</Link>
         <Link to="/sound" className='nav-item'>Sound</Link>
         <Link to="/list" className='nav-item'>List</Link>
+        <Link to="/register" className='nav-item'>Sign Up</Link>
       </nav>
 
       <Routes>
@@ -46,6 +48,7 @@ function App() {
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/sound" element={<Sound />}></Route>
         <Route path="/list" element={<MapList data={desserts}/>}></Route>
+        <Route path="/register" element={<Register />}></Route>
       </Routes>
 
       
